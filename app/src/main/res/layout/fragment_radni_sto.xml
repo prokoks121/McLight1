@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".soba.RadniSto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <top.defaults.colorpicker.ColorPickerView
+            android:id="@+id/colorPicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:enableAlpha="false"
+            app:enableBrightness="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/radniStoOff"
+            android:layout_width="81dp"
+            android:layout_height="66dp"
+
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/border_pocetna"
+            android:longClickable="true"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorPicker">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Off"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/brzina"
+            android:layout_width="157dp"
+            android:layout_height="146dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="52dp"
+            app:back_circle_color="#EDEDED"
+            app:indicator_color="#0B3C49"
+            app:indicator_width="25"
+            app:is_continuous="false"
+            app:label="Brzina"
+            app:label_color="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/jacina"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorPicker"
+            app:layout_constraintVertical_bias="0.409"
+            app:main_circle_color="#FFFFFF"
+            app:max="255"
+            app:progress="10"
+            app:progress_primary_circle_size="10"
+            app:progress_primary_color="#0B3C49"
+            app:progress_primary_stroke_width="100"
+            app:progress_secondary_circle_size="5"
+            app:progress_secondary_color="#EEEEEE"
+            app:start_offset="45" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="16dp"
+            android:text="Jacina"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="false"
+
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/jacina"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="84dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Brzina"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="false"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/brzina"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/jacina"
+            android:layout_width="157dp"
+            android:layout_height="146dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="52dp"
+            app:back_circle_color="#EDEDED"
+            app:indicator_color="#0B3C49"
+            app:indicator_width="25"
+            app:is_continuous="false"
+            app:label="Jacina"
+            app:label_color="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/brzina"
+            app:layout_constraintTop_toBottomOf="@+id/colorPicker"
+            app:layout_constraintVertical_bias="0.418"
+            app:main_circle_color="#FFFFFF"
+            app:max="255"
+            app:progress="10"
+            app:progress_primary_circle_size="10"
+            app:progress_primary_color="#0B3C49"
+            app:progress_primary_stroke_width="100"
+            app:progress_secondary_circle_size="5"
+            app:progress_secondary_color="#EEEEEE"
+            app:start_offset="45" />
+
+        <ImageView
+            android:id="@+id/dialogMod"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_flash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

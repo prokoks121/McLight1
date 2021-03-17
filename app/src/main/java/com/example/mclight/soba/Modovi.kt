@@ -1,0 +1,8 @@
+package com.example.mclight.soba
+
+class Modovi {
+    companion object Mod {
+        fun mod() : Map<Int,String> = mapOf(0 to "Static",1 to "Blink",2 to "Breath",3 to "Color Wipe",4 to "Color Wipe Inverse",5 to "Color Wipe Reverse", 6 to "Color Wipe Reverse Inverse", 7 to "Color Wipe Random",8 to "Random Color",9 to "Single Dynamic", 10 to "Multi Dynamic",11 to "Rainbow",12 to "Rainbow Cycle",13 to "Scan",14 to "Dual Scan",15 to "Fade", 16 to "Theater Chase", 17 to "Theater Chase Rainbow", 18 to "Running Lights",19 to "Twinkle",20 to "Twinkle Random",21 to "Twinkle Fade" , 22 to "Twinkle Fade Random",23 to "Sparkle",24 to "Flash Sparkle",25 to "Hyper Sparkle",26 to "Strobe",27 to "Strobe Rainbow",28 to "Multi Strobe",29 to "Blink Rainbow",30 to "Chase White",31 to "Chase Color",32 to "Chase Random",33 to "Chase Rainbow",34 to "Chase Flash",35 to "Chase Flash Random",36 to "Chase Rainbow White", 37 to "Chase Blackout",38 to "Chase Blackout Rainbow",39 to "Color Sweep Random",40 to "Running Color",41 to "Running Red Blue",42 to "Running Random",43 to "Larson Scanner",44 to "Comet",45 to "Fireworks",46 to "Fireworks Random",47 to "Merry Christmas",48 to "Fire Flicker",49 to "Fire Flicker (soft)",50 to "Fire Flicker (intense)",51 to "Circus Combustus",52 to "Halloween",53 to "Bicolor Chase",54 to "Tricolor Chase",55 to "ICU",56 to "Custom 0", 57 to "Custom 1",58 to "Custom 2",59 to "Custom 3")
+
+    }
+}

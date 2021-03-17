@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigacija"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.mclight.Main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_radniSto"
+            app:destination="@id/radniSto" />
+    </fragment>
+    <fragment
+        android:id="@+id/radniSto"
+        android:name="com.example.mclight.soba.RadniSto"
+        android:label="fragment_radni_sto"
+        tools:layout="@layout/fragment_radni_sto" />
+</navigation>
